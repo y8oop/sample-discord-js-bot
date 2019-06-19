@@ -13,7 +13,7 @@ client.on("ready", function() {
 
 client.on("message", (message) => {
   if(message.content.startsWith(PREFIX + "test")){
-        message.channel.send("test is working");
+        message.channel.send("test is working")
           message.reply("30");
   }
          if(message.content.startsWith("second test")){
