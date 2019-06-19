@@ -1,0 +1,19 @@
+{
+  "name": "anyNAME",
+  "version": "2.0.0",
+  "description": "simple bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "unknown",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "superagent": "^3.8.2",
+    "botlist.space": "^1.0.7",
+    "request": "^2.87.0",
+    "dblapi.js": "^2.1.0",
+    "webhook-discord": "^2.3.0"
+  }
+}
