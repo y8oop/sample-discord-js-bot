@@ -5,40 +5,24 @@ const examplefile = require('./herethefile.js');
 //const token = "yourTOKENid"
 
 const PREFIX = "s!"
+
 client.on("ready", function() { 
-        client.user.setActivity("jimmy yeah") 
-        client.user.setStatus('idle')
-    console.log("Booted up! yoraay"); 
+        client.user.setActivity("being alive") 
+    console.log("Booted up!"); 
 });
 
 client.on("message", (message) => {
-  if(message.content.startsWith(PREFIX + "hi")){
-      message.reply("hi");
-            message.channel.send("tell me a good joke");
+  if(message.content.startsWith(PREFIX + "test")){
+        message.channel.send("test is working")
+          message.reply("30");
   }
-        if(message.content.includes(`jimmy test`)){
-                message.channel.send("yeeah.");
-        }
-         if(message.content.startsWith(PREFIX + "commands")){
-        message.channel.send("*here is list of commands: 1:nothing 2:nothing 3:nothing*");
-  }
-          if(message.content.startsWith(PREFIX + MFIX)){
-        message.channel.send("*wow* w*o*rking");
-  }
-           if(message.content.startsWith(PREFIX + MFIX + rIX)){
-        message.channel.send("o.o");
-  }
-        if(message.content.startsWith(PREFIX + MFIX + RIX)){
-        message.channel.send("^_^");
-  }
-  
-        //   if(message.content.startsWith(`give ${member} a beer`)){
-//let member = message.mentions.members.first()
-//message.channel.send(` ${member} got a beer !`);
-//}
-         
-       
+         if(message.content.startsWith("second test")){
+        message.channel.send("*Wololo* second test ")
+        message.author.sendMessage("this is also working");
+  } 
+    
 });
+
 
 
 client.login(process.env.token);
