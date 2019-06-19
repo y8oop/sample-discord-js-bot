@@ -4,8 +4,8 @@ const herethefile = require('./herethefile.js');
 
 
 client.on("message", (message) => {
-  if(message.content.startsWith(PREFIX + " go stream")){
-     client.user.setActivity("my adventure as streamer", {type: "STREAMING"});
+  if(message.content.startsWith(PREFIX + " go watch")){
+                client.user.setActivity("the world", {type: "WATCHING"})
         }
         
         });
