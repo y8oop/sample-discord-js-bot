@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client(); 
 const examplefile = require('./herethefile.js'); 
 
-const token = "yourTOKENid"
+//const token = "yourTOKENid"
 
 const PREFIX = "s!"
 
